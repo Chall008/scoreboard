@@ -9,7 +9,7 @@ html {
 body {
   margin: 0;
   min-height: 100%;
-  background-color: #999b9a;
+  background-color: #b9bdbb;
 
   color: #3e3f41;
   /* creates an image consisting of a progressive transition between two or more colors along a straight line. Its result is an object of the <gradient> data type, which is a special kind of <image> */
@@ -48,7 +48,7 @@ section {
   border: thin solid #030303;
   box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem;
   box-sizing: border-box;
-  background-color: rgb(181, 200, 209);
+  background-color: rgb(234, 237, 238);
   border-radius: 0.3rem;
   margin-bottom: 3rem;
 
@@ -89,10 +89,11 @@ fieldset i.add {
 fieldset i.subtract {
   color: #e73c7e;
 }
-.ResetGame {
-  justify-content: center;
-}
 button {
   background-color: rgb(73, 73, 73);
   color: rgb(247, 243, 241);
+}
+footer {
+  display: flex;
+  justify-content: center;
 }

@@ -43,6 +43,10 @@ function teamTwoSubtractScore() {
   document.querySelector('h3.team2Score').textContent = team2Total
 }
 
+function reset() {
+  location.reload(true)
+}
+
 function main() {
   if (document.querySelector('h3.team1Score')) {
     document.querySelector('h3.team1Score').textContent = 0
@@ -76,6 +80,10 @@ function main() {
   document
     .querySelector('.team2 .subtract')
     .addEventListener('click', teamTwoSubtractScore)
+
+  const resetButton = document
+    .querySelector('#Reset')
+    .addEventListener('click', reset)
 }
 
 document.addEventListener('DOMContentLoaded', main)
