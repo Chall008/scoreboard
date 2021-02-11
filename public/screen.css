@@ -9,4 +9,90 @@ html {
 body {
   margin: 0;
   min-height: 100%;
+  background-color: #999b9a;
+
+  color: #3e3f41;
+  /* creates an image consisting of a progressive transition between two or more colors along a straight line. Its result is an object of the <gradient> data type, which is a special kind of <image> */
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+/* controls the intermediate steps in a CSS animation sequence by defining styles for keyframes (or waypoints) along the animation sequence. This gives more control over the intermediate steps of the animation sequence than transitions. */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+h1 {
+  text-align: center;
+  font-family: Monospace;
+  margin: 1rem 0 3rem 0;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+section {
+  min-width: 20rem;
+  border: thin solid #030303;
+  box-shadow: 0.2rem 0.2rem 0.2rem 0.2rem;
+  box-sizing: border-box;
+  background-color: rgb(181, 200, 209);
+  border-radius: 0.3rem;
+  margin-bottom: 3rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section h2,
+section p {
+  text-align: center;
+}
+
+section h3 {
+  margin: 1rem 0;
+  font-family: Monospace;
+  font-size: 3rem;
+}
+
+fieldset {
+  padding-left: 0;
+  padding-right: 0;
+  border: none;
+}
+
+fieldset input {
+  padding: 0.5rem;
+}
+
+fieldset i {
+  margin: 0 0.2rem;
+}
+
+fieldset i.add {
+  color: #23d5ab;
+}
+
+fieldset i.subtract {
+  color: #e73c7e;
+}
+.ResetGame {
+  justify-content: center;
+}
+button {
+  background-color: rgb(73, 73, 73);
+  color: rgb(247, 243, 241);
 }

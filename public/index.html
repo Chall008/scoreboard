@@ -6,9 +6,46 @@
     <title>Scoreboard</title>
     <link rel="shortcut icon" href="/favicon.ico" />
     <link rel="stylesheet" href="/screen.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <h1 class="hello-world"></h1>
+    <header>
+      <h1>My Score Board</h1>
+    </header>
+    <main>
+      <section class="team1">
+        <h2 class="Team1Name"></h2>
+        <h3 class="team1Score"></h3>
+        <fieldset>
+          <input type="text" class="Name1" />
+          <button class="update-Team1">Update</button>
+        </fieldset>
+
+        <fieldset>
+          <i class="add team1 fas fa-2x fa-plus-circle"></i>
+          <i class="subtract team 2 fas fa-2x fa-minus-circle"></i>
+        </fieldset>
+      </section>
+
+      <section class="team2">
+        <h2 class="Team2Name"></h2>
+        <h3 class="team2Score"></h3>
+        <fieldset>
+          <input type="text" class="Name2" />
+          <button class="update-Team2">Update</button>
+        </fieldset>
+
+        <fieldset>
+          <i class="add team2 fas fa-2x fa-plus-circle"></i>
+          <i class="subtract team2 fas fa-2x fa-minus-circle"></i>
+        </fieldset>
+      </section>
+      <!-- <button class="ResetGame">Reset</button> -->
+    </main>
+
     <script src="/main.js" charset="utf-8"></script>
   </body>
 </html>
